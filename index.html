@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Restorent Landing Page Design</title>
+    <!-- link icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!-- sm: -->
+<!-- lg: -->
+
+<body class="body">
+    <main class="w-full h-full p-20 shadow-3xl bg-[#fff]">
+        <!-- desktop header  -->
+        <header class="w-full h-20 max-sm:hidden lg:block">
+            <nav class="flex justify-between items-center h-full p-5 ">
+                <div class="menu">
+                    <ul class="flex gap-10 font-bold">
+                        <li><a href="#" class="hover:text-lime-500">Home</a></li>
+                        <li><a href="#" class="hover:text-lime-500">Product</a></li>
+                        <li><a href="#" class="hover:text-lime-500">Recipe</a></li>
+                        <li><a href="#" class="hover:text-lime-500">About</a></li>
+                    </ul>
+                </div>
+                <div class="log-btn flex gap-4">
+                    <button
+                        class="lg:bg-orange-400 sm:bg-blue-400  px-8 py-2 font-bold rounded-3xl text-white shadow-2xl">Log
+                        in </button>
+                    <button class="bg-orange-100 px-8 py-2 font-bold rounded-3xl text-amber-500 shadow-2xl">Sign Up
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- mobile header -->
+        <header class="w-full h-20 max-sm:block lg:hidden">
+            <nav class="flex justify-between items-center h-full p-5 ">
+                <div class="menu font-bold">
+                    logo
+                </div>
+                <div>
+                    <i class="ri-menu-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero-section w-full h-full grid grid-cols-2 rounded-lg  ">
+          <div class="left-box border-solid border-2 border-slate-300 mx-3  rounded-lg shadow-md">
+          
+                <img class="img p-5 h-[40%] w-[60%] pl-5 " src="https://tse1.mm.bing.net/th?id=OIP.q7GO6j_hjpfE1ePnqukeIwHaFo&pid=Api&P=0&h=180" alt="">
+             
+            <div class="content">
+                <h2 class="c-burger text-4xl font-bold p-5 font-serif ">Classic Burger </h2>
+                <div class="rate-box flex justify-around ">
+                    <div class="rate-box-1  border-solid border-2 border-black-500 rounded-lg  px-3 py-1  drop-shadow-xl font-serif">Fat - 26g</div>
+                    <div class="rate-box-1 border-solid border-2 border-black-500 rounded-lg px-3   py-1 drop-shadow-xl  font-serif">Saturates - 10g</div>
+                    <div class="rate-box-1 border-solid border-2 border-black-500 rounded-lg  px-3 py-1 drop-shadow-xl  font-serif ">ugars - 18g</div>
+                    <div class="rate-box-1 border-solid border-2 border-black-500 rounded-lg px-3   py-1 drop-shadow-xl font-serif ">Salt - 1g</div>
+                </div>
+                <p class="paragraph1 font-serif text-center py-5 ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil cupiditate itaque facilis odit soluta quam voluptates harum, facere culpa similique pariatur tenetur quasi illo rem. Mollitia numquam quisquam eligendi quis ipsam, delectus corrupti iusto, earum.
+                </p>
+                <div class="add-to-cart flex justify-around ">
+                  <div class="0 rounded-lg bg-green-100 text-2xl font-bold">
+                    <span class="span-1 text-black-400 px-4 text-3xl font-bold ">-</span> 0 <span class="span-1 text-green-700  px-4 text-3xl font-bold ">+</span>
+                  </div>
+                  <h3 class="h3 text-3xl font-bold ">$16</h3>
+                  <button class="cart bg-green-100 px-4 py-1 pl-5  rounded-lg text-green-800 text-1xl font-bold"><i class="ri-shopping-cart-line"></i> : Add to Cart </button>
+                </div>
+            </div>          
+          </div>
+          <div class="right-box grid grid-cols-2 grid-rows-2 bg-black-50 gap-5 ">
+
+            <div class="burger-1 border-solid border-2 border-slate-300  p-4  shadow-md  rounded-lg  text-center">
+
+                <img class="img flex justify-center align-center " src="https://tse1.mm.bing.net/th?id=OIP.q7GO6j_hjpfE1ePnqukeIwHaFo&pid=Api&P=0&h=180" alt="">
+                <h2 class="h2 font-serif text-2xl font-bold p-2 ">Double Burgger </h2>
+                <p class="para font-serif  py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident doloribus quos quaerat eiu</p>
+                <div class="add-to-cart flex justify-around ">
+                    <div class="0 rounded-lg bg-green-100 text-1xl font-bold">
+                      <span class="span-1 text-black-400 px-1 py-1 text-2xl font-bold ">-</span> 0 <span class="span-2 text-green-700  px-4 text-2xl font-bold ">+</span>
+                    </div>
+                    <h3 class="h3 text-2xl font-bold ">$16</h3>
+                    <button class="cart bg-green-100 px-2 py-1  rounded-lg text-green-800 text-1xl font-bold"><i class="ri-shopping-cart-line"></i> </button>
+                  </div>
+
+            </div>
+            <div class="burger-1 border-solid border-2 border-slate-300   p-4 shadow-md rounded-lg text-center">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.q7GO6j_hjpfE1ePnqukeIwHaFo&pid=Api&P=0&h=180" alt="">
+                <h2 class="h2 font-serif text-2xl font-bold p-2 ">Double Burgger </h2>
+                <p class="para font-serif  py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident doloribus quos quaerat eiu</p>
+                
+                <div class="add-to-cart flex justify-around ">
+                    <div class="0 rounded-lg bg-green-100 text-1xl font-bold">
+                      <span class="span-1 text-black-400 px-1 py-1 text-2xl font-bold ">-</span> 0 <span class="span-2 text-green-700  px-4 text-2xl font-bold ">+</span>
+                    </div>
+                    <h3 class="h3 text-2xl font-bold ">$16</h3>
+                    <button class="cart bg-green-100 px-2 py-1  rounded-lg text-green-800 text-1xl font-bold"><i class="ri-shopping-cart-line"></i> </button>
+                  </div>
+            </div>
+            <div class="burger-1 border-solid border-2 border-slate-300  p-4  shadow-md rounded-lg text-center">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.q7GO6j_hjpfE1ePnqukeIwHaFo&pid=Api&P=0&h=180" alt="">
+                <h2 class="h2 font-serif text-2xl font-bold p-2 ">Double Burgger </h2>
+                <p class="parafont-serif  py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident doloribus quos quaerat eiu</p>
+                <div class="add-to-cart flex justify-around ">
+                    <div class="0 rounded-lg bg-green-100 text-1xl font-bold">
+                      <span class="span-1 text-black-400 px-1 py-1 text-2xl font-bold ">-</span> 0 <span class="span-2 text-green-700  px-4 text-2xl font-bold ">+</span>
+                    </div>
+                    <h3 class="h3 text-2xl font-bold ">$16</h3>
+                    <button class="cart bg-green-100 px-2 py-1  rounded-lg text-green-800 text-1xl font-bold"><i class="ri-shopping-cart-line"></i> </button>
+                  </div>
+            </div>
+            <div class="burger-1 border-solid border-2 border-slate-300  p-4  shadow-md rounded-lg text-center">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.q7GO6j_hjpfE1ePnqukeIwHaFo&pid=Api&P=0&h=180" alt="">
+                <h2 class="h2 font-serif text-2xl font-bold p-2">Double Burgger </h2>
+                <p class="para font-serif py-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident doloribus quos quaerat eiu</p>
+                <div class="add-to-cart flex justify-around ">
+                    <div class="0 rounded-lg bg-green-100 text-1xl font-bold">
+                      <span class="span-1 text-black-400 px-1 py-1 text-2xl font-bold ">-</span> 0 <span class="span-2 text-green-700  px-4 text-2xl font-bold ">+</span>
+                    </div>
+                    <h3 class="h3 text-2xl font-bold ">$16</h3>
+                    <button class="cart bg-green-100 px-2 py-1  rounded-lg text-green-800 text-1xl font-bold"><i class="ri-shopping-cart-line"></i> </button>
+                  </div>
+            </div>
+          </div>
+        </section>
+    </main>
+</body>
+
+</html>
